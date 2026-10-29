@@ -2532,6 +2532,36 @@
   }
 
 
+
+  /* ── SIGNATURE MENU ── */
+  .signature-section { padding: 120px 80px; background: var(--chocolate); position: relative; }
+  .signature-inner { max-width: 1100px; margin: 0 auto; }
+  .signature-header { text-align: center; margin-bottom: 64px; }
+  .signature-lead { font-weight: 300; font-size: 15px; line-height: 2.1; color: var(--cream-deep); margin-top: 24px; }
+  .signature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .signature-card { background: var(--chocolate-mid); border: 1px solid rgba(201,169,110,0.25); padding: 48px 40px; position: relative; display: flex; flex-direction: column; }
+  .signature-badge { position: absolute; top: -1px; left: 40px; background: var(--wine); color: var(--cream); font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 0.3em; padding: 8px 16px; }
+  .signature-en { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.35em; color: var(--gold); display: block; margin: 16px 0 10px; }
+  .signature-name { font-family: 'Noto Serif JP', serif; font-weight: 400; font-size: 24px; color: var(--cream); line-height: 1.5; }
+  .signature-catch { font-family: 'Noto Serif JP', serif; font-size: 16px; color: var(--gold-light); line-height: 1.9; margin: 20px 0; padding-left: 16px; border-left: 2px solid var(--gold); }
+  .signature-desc { font-weight: 300; font-size: 14px; line-height: 2.1; color: var(--cream-deep); }
+  .signature-points { list-style: none; margin: 24px 0 28px; display: grid; gap: 10px; }
+  .signature-points li { font-size: 14px; line-height: 1.8; color: var(--cream); padding-left: 22px; position: relative; }
+  .signature-points li::before { content: '✦'; position: absolute; left: 0; color: var(--gold); font-size: 11px; top: 3px; }
+  .signature-foot { margin-top: auto; padding-top: 24px; border-top: 1px solid rgba(201,169,110,0.2); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .signature-price { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--gold); }
+  .signature-price small { font-family: 'Noto Serif JP', serif; font-size: 12px; color: var(--cream-deep); margin-left: 4px; }
+  .signature-link { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 0.2em; color: var(--gold); border: 1px solid var(--gold); padding: 10px 20px; text-decoration: none; transition: all 0.3s; }
+  .signature-link:hover { background: var(--gold); color: var(--chocolate); }
+  @media (max-width: 900px) {
+    .signature-section { padding: 80px 20px; }
+    .signature-grid { grid-template-columns: 1fr; gap: 40px; }
+    .signature-card { padding: 44px 24px 32px; }
+    .signature-badge { left: 24px; }
+    .signature-name { font-size: 21px; }
+    .signature-header .section-title { font-size: 30px; }
+    .signature-lead { font-size: 13px; line-height: 2; word-break: keep-all; }
+  }
 </style>
 </head>
 <body>
@@ -2658,6 +2688,51 @@
           <ul class="service-list">
             <li>まつ毛エクステ</li><li>まつ毛パーマ</li><li>まつ毛ケア</li><li>同日施術OK</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ── SIGNATURE MENU ── -->
+<section class="signature-section" id="signature" aria-label="こだわりの人気メニュー">
+  <div class="signature-inner">
+    <div class="signature-header reveal">
+      <span class="section-label">// SIGNATURE MENU</span>
+      <h2 class="section-title">こだわりの<em>人気メニュー</em></h2>
+      <div class="divider" style="justify-content:center;"><div class="divider-line" style="background:linear-gradient(to left,transparent,var(--gold))"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
+      <p class="signature-lead">「カラーを続けたいけれど、<wbr>髪の傷みが気になる」<br>そんな声に応えて生まれた、<wbr>Moulin-Rだけの<wbr>オリジナルメニューです。</p>
+    </div>
+    <div class="signature-grid">
+      <div class="signature-card reveal">
+        <span class="signature-badge">POPULAR No.1</span>
+        <span class="signature-en">MR COLOR / MR SYSTEM</span>
+        <h3 class="signature-name">MRカラー／MRシステム</h3>
+        <p class="signature-catch">染めるたびに、<br>髪が美しくなるカラーへ。</p>
+        <p class="signature-desc">カラーと同時に髪をいたわる、Moulin-Rオリジナルのカラートリートメント技術。繰り返しのカラーでもパサつきやごわつきを抑え、ツヤとやわらかさのある髪へ導きます。白髪染めやエイジング毛のお悩みにも寄り添います。</p>
+        <ul class="signature-points">
+          <li>繰り返しのカラーでも安心のオリジナル技術</li>
+          <li>白髪・エイジング毛のお悩みにも対応</li>
+          <li>ツヤ・手触り・色持ちにこだわった仕上がり</li>
+        </ul>
+        <div class="signature-foot">
+          <span class="signature-price">¥8,800<small>〜（税込）</small></span>
+          <a href="#menu" class="signature-link" onclick="var t=document.querySelector('.price-tab[onclick*=&quot;\'mr\'&quot;]');if(t)priceTab('mr',t);">料金を見る</a>
+        </div>
+      </div>
+      <div class="signature-card reveal">
+        <span class="signature-badge">RECOMMEND</span>
+        <span class="signature-en">BIHATSU CHARGE TREATMENT</span>
+        <h3 class="signature-name">美髪チャージトリートメント</h3>
+        <p class="signature-catch">年齢とともに失われる<br>「髪の美しさ」をチャージ。</p>
+        <p class="signature-desc">うねり・パサつき・ツヤ不足など、年齢とともに変化する髪のために。髪の内側に美髪成分を届け、まとまりとうるおいのある髪へ整えます。カラーやパーマとの組み合わせもおすすめです。</p>
+        <ul class="signature-points">
+          <li>うねり・パサつき・ツヤ不足の髪に</li>
+          <li>まとまりとうるおいのある手触りへ</li>
+          <li>カラー・パーマと同時施術もOK</li>
+        </ul>
+        <div class="signature-foot">
+          <span class="signature-price">¥6,600<small>〜（税込）</small></span>
+          <a href="#menu" class="signature-link" onclick="var t=document.querySelector('.price-tab[onclick*=&quot;\'mr\'&quot;]');if(t)priceTab('mr',t);">料金を見る</a>
         </div>
       </div>
     </div>
